@@ -1,43 +1,100 @@
-# Astro Starter Kit: Minimal
+# Xeno Core
 
-```sh
-npm create astro@latest -- --template minimal
+**Robotics • AI • Autonomous Systems**
+
+Xeno Core is a robotics engineering portfolio, technical publishing platform, and future robotics/AI engineering company website.
+
+The platform documents practical engineering work involving ROS 2, autonomous systems, computer vision, artificial intelligence, simulation, embedded systems, and physical robot development.
+
+## Project Status
+
+Xeno Core is in early development. The current milestone is establishing the website architecture, development workflow, content system, and production deployment foundation.
+
+- **Domain:** [xenocoredigital.com](https://xenocoredigital.com)
+- **Repository:** [D3V-KNIGHT/xeno-core](https://github.com/D3V-KNIGHT/xeno-core)
+
+## Architecture
+
+| Layer | Technology |
+|---|---|
+| Web framework | Astro |
+| Language | TypeScript |
+| Content | Markdown and MDX |
+| Content management | Astro Content Collections |
+| Styling | Native CSS |
+| Source control | Git and GitHub |
+| Hosting | Cloudflare Workers Static Assets (planned) |
+| DNS and TLS | Cloudflare (planned) |
+| Rendering | Static generation by default |
+
+The architectural principle is:
+
+> Static by default. Dynamic only when required.
+
+## Local Development
+
+### Prerequisites
+
+- Git
+- NVM
+- Node.js 24
+- npm
+
+### Setup
+
+```bash
+git clone git@github.com:D3V-KNIGHT/xeno-core.git
+cd xeno-core
+nvm install
+nvm use
+npm ci
+npm run dev
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
+The local development server will be available at:
 
 ```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+http://localhost:4321
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Commands
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+| Command | Purpose |
+|---|---|
+| `npm run dev` | Start the local development server |
+| `npm run build` | Generate the production site |
+| `npm run preview` | Preview the production build locally |
+| `npm run astro` | Run Astro CLI commands |
 
-Any static assets, like images, can be placed in the `public/` directory.
+## Development Workflow
 
-## 🧞 Commands
+- `main` represents the production-ready branch.
+- Changes are developed on focused branches.
+- Commit messages follow Conventional Commits.
+- Every change must pass a production build before merging.
+- Secrets and credentials must never be committed.
 
-All commands are run from the root of the project, from a terminal:
+Example branch names:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+```text
+feature/homepage
+feature/project-system
+content/humanoid-head
+fix/mobile-navigation
+chore/repository-foundation
+```
 
-## 👀 Want to learn more?
+## Planned Content
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- Engineering projects
+- Technical articles
+- Research notes
+- Robotics demonstrations
+- Architecture diagrams
+- GitHub repositories
+- Videos and images
+- Future products and engineering services
+
+## License
+
+No license has been granted at this time. All rights are reserved.
